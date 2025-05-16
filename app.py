@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/predict": {"origins": "https://crops-detection-app.vercel.app/"}})
 
 # Load the trained model
 with open('model.pkl', 'rb') as f:
